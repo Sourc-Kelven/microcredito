@@ -1,0 +1,12 @@
+header {
+  img{
+    width: 14rem;
+    height: 7rem;
+    
+    object-fit: cover;
+  }
+
+  & a:first-child {
+    margin-right: auto;
+  }
+}

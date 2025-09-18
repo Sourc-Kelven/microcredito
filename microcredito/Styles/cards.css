@@ -1,0 +1,24 @@
+.card {
+  background-color: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 1.5rem;
+
+  & img[src*="svg"] {
+    width: 2rem;
+  }
+
+  & h3 {
+    margin-top: 1rem;
+    font: var(--fw-bold) var(--fs-h3) / 120% var(--ff-sans);
+    letter-spacing: -0.04em;
+  }
+
+  & p {
+    margin-top: .5rem;
+    font: var(--fw-base) var(--fs-paragraph)/160% var(--ff-sans);
+    color: var(--text-color-secondary);
+  }
+}
+
+@media (width >= 80em) {
+}

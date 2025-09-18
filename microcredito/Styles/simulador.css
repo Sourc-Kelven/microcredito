@@ -1,0 +1,126 @@
+#simulador {
+  background-color: var(--surface-color);
+  padding: var(--padding-y-xl) var(--padding-x);
+  border-radius: 2rem;
+  text-align: center;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+}
+
+#simulador .section-title {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  margin-bottom: 2rem;
+  color: var(--text-color-primary);
+}
+
+.simulador-form {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: var(--fw-md);
+  margin-bottom: 0.5rem;
+  color: var(--text-color-primary);
+}
+
+.form-group .input {
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--stroke-color);
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+  font: var(--fw-base) var(--fs-paragraph) / 1.5 var(--ff-sans);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.form-group .input:focus {
+  border-color: var(--brand-color-primary);
+  box-shadow: 0 0 0.5rem rgba(58,141,255,0.4);
+  outline: none;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--brand-color-primary), var(--brand-color-secondary));
+  color: var(--bg-color);
+  font-weight: var(--fw-bold);
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;         /* garante alinhamento com inputs */
+  text-align: center;  /* centraliza o texto dentro do botão */
+  border: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(58,141,255,0.3);
+}
+
+.resultado {
+  margin-top: 2rem;
+  font-size: var(--fs-paragraph);
+  color: var(--text-color-secondary);
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: all 0.5s ease;
+}
+
+.resultado.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.resultado-item {
+  margin-bottom: 0.5rem;
+  font-weight: var(--fw-md);
+  color: var(--text-color-primary);
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 768px) {
+  #simulador {
+    padding: 2rem 1rem;
+  }
+
+  .simulador-form {
+    gap: 1rem;
+    max-width: 100%;
+  }
+
+  #simulador .section-title {
+    font-size: calc(var(--fs-h2) - 0.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  #simulador {
+    padding: 1.5rem 1rem;
+  }
+
+  .simulador-form {
+    gap: 0.75rem;
+  }
+
+  #simulador .section-title {
+    font-size: calc(var(--fs-h2) - 1rem);
+  }
+
+  .btn-primary {
+    padding: 0.65rem 1rem;
+  }
+
+  .resultado {
+    font-size: calc(var(--fs-paragraph) - 0.125rem);
+  }
+}

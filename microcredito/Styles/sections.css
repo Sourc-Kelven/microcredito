@@ -1,0 +1,33 @@
+#smartphones-img {
+  background: url(../Assets/Images/ilustration.svg) top/cover;
+}
+
+section {
+  & header {
+    & strong {
+      margin-top: 3rem;
+      font: var(--fw-md) var(--fs-span) / 100% var(--ff-sans);
+      letter-spacing: 0.08em;
+      color: var(--brand-color-primary);
+      text-transform: uppercase;
+    }
+
+    & h2 {
+      margin-top: 0.5rem;
+      font: var(--fw-bold) var(--fs-h2) / 120% var(--ff-sans);
+      letter-spacing: -0.04em;
+    }
+
+    & p {
+      margin-top: 0.5rem;
+      font: var(--fw-base) var(--fs-paragraph) / 160% var(--ff-sans);
+      color: var(--text-color-secondary);
+    }
+  }
+}
+
+@media (width >= 80em) {
+  #smartphones-img {
+    display: none;
+  }
+}
