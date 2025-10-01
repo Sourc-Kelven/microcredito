@@ -25,7 +25,7 @@
 
 @media (width >= 80em) {
   #hero {
-    background: url(../Assets/Images/bg-hero-desktop.svg) no-repeat bottom center/contain;
+    background: url(../Assets/Images/bg.svg) no-repeat bottom center/contain;
     padding-bottom: 15rem;
     & img[src*="music"] {
       width: 25.75rem;
