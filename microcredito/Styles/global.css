@@ -12,15 +12,15 @@
 
 :root {
   /* BRAND COLOR */
-  --brand-color-primary: #0142A6;   /* azul bebê */
-  --brand-color-secondary: #89CFF0; /* azul bebê mais escuro */
+  --brand-color-primary: #0142A6;
+  --brand-color-secondary: #89CFF0;
 
   /* BASE COLOR */
-  --bg-color: #ffffff;              /* fundo principal branco */
-  --surface-color: #f9fafb;         /* superfícies mais claras */
-  --stroke-color: #e5e7eb;          /* bordas cinza claro */
-  --text-color-secondary: #111111;  /* cinza escuro */
-  --text-color-primary: #4b5563;    /* texto preto */
+  --bg-color: #ffffff;
+  --surface-color: #f9fafb;
+  --stroke-color: #e5e7eb;
+  --text-color-secondary: #111111;
+  --text-color-primary: #4b5563;
 
   /* FONT FAMILY | WEIGHT */
   --ff-sans: "Inter", system-ui, sans-serif;
@@ -36,10 +36,7 @@
   --fs-span: 0.875rem;
 
   /* CONTAINER SPACE */
-  /* HORIZONTAL */
   --padding-x: 1.5rem;
-
-  /* VERTICAL */
   --padding-y-base: 1rem;
   --padding-y-large: 1.5rem;
   --padding-y-xl: 3rem;
@@ -58,7 +55,7 @@ html {
 
 body {
   background-color: var(--bg-color);
-   color: var(--text-color-primary);  
+  color: var(--text-color-primary);
   overflow-x: hidden;
 }
 
@@ -86,19 +83,7 @@ a {
   text-decoration: none;
   color: var(--brand-color-primary);
   transition: color 0.3s ease;
-  /* color: inherit; */
 }
-
-/* a:hover {
-  background: linear-gradient(
-    90deg,
-    var(--brand-color-secondary) 0%,
-    var(--brand-color-primary) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-} */
 
 a:hover {
   color: var(--brand-color-secondary);
@@ -118,7 +103,6 @@ img {
     --fs-h1: 4rem;
     --fs-h2: 3rem;
     --fs-h3: 2rem;
-
     --padding-x: 2rem;
     --padding-y-base: 1.5rem;
     --padding-y-large: 2.5rem;

@@ -1,0 +1,158 @@
+/* Seção Porque Escolher */
+#why-choose-us {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 80px 0;
+}
+
+.why-choose-section .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.why-choose-section .section-header strong {
+    display: block;
+    color: #3498db;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.why-choose-section .section-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* Grid de Vantagens */
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+/* Cards de Vantagem */
+.advantage-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    position: relative;
+    overflow: hidden;
+}
+
+.advantage-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.advantage-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+}
+
+/* Ícones */
+.advantage-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.advantage-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.advantage-card h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.advantage-card p {
+    color: #6c757d;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Animações */
+.fade-in {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #why-choose-us {
+        padding: 60px 0;
+    }
+    
+    .why-choose-section .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .advantage-card {
+        padding: 30px 20px;
+    }
+    
+    .advantage-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+    
+    .advantage-icon i {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-choose-section .section-header {
+        margin-bottom: 40px;
+    }
+    
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .advantage-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .advantage-card p {
+        font-size: 0.95rem;
+    }
+}

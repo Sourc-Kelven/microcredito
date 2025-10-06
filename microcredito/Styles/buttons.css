@@ -4,13 +4,10 @@
 
   border: 0;
   background-color: transparent;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: fit-content;
-
   background: var(--btn-bg-color);
   color: var(--btn-color);
   font: var(--fw-md) var(--fs-paragraph) / 1.5rem var(--ff-sans);
@@ -25,7 +22,6 @@
     var(--brand-color-primary) 100%
   );
   --btn-color: var(surface-color);
-
   -webkit-background-clip: initial;
   background-clip: initial;
   color: var(--btn-color);

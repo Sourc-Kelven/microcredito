@@ -1,29 +1,213 @@
+/* Seção de Contato */
 #download {
-  & .card {
-    position: relative;
-    padding: 1rem 1rem 1rem;
-  }
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 80px 0;
+}
 
-  & .buttons {
-    margin-top: 2rem;
-  }
+.contact-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
 
-  @media (width >= 80em) {
-    & .card {
-      display: flex;
-      padding: 8.75rem 5rem;
+.contact-content {
+    padding-right: 20px;
+}
 
-      & div:nth-child(1) {
-        max-width: 40rem;
-      }
+.contact-header {
+    margin-bottom: 25px;
+}
 
-      & .buttons {
-        display: flex;
-      }
+.contact-header strong {
+    display: block;
+    color: #3498db;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
 
-      & div + img {
-        width: 29.125rem;
-      }
+.contact-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.contact-description {
+    color: #6c757d;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Container do Formulário */
+.contact-form-container {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+/* Formulário */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #adb5bd;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Botão de Envio */
+.contact-submit-btn {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-submit-btn:hover {
+    background: linear-gradient(135deg, #2980b9, #2471a3);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+.contact-submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Estados de Validação */
+.form-group input:invalid:not(:focus):not(:placeholder-shown),
+.form-group textarea:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: #e74c3c;
+}
+
+.form-group input:valid:not(:focus):not(:placeholder-shown),
+.form-group textarea:valid:not(:focus):not(:placeholder-shown) {
+    border-color: #27ae60;
+}
+
+/* Animações */
+.fade-in {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
     }
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+    .contact-card {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 30px;
+    }
+    
+    .contact-content {
+        padding-right: 0;
+        text-align: center;
+    }
+    
+    .contact-header h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #download {
+        padding: 60px 0;
+    }
+    
+    .contact-card {
+        padding: 30px 20px;
+    }
+    
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+    
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-description {
+        font-size: 1rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+    }
+    
+    .contact-submit-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
 }

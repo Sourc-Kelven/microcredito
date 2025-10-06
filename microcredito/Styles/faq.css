@@ -1,0 +1,115 @@
+/* ===== SEÇÃO FAQ ===== */
+#faq {
+    background-color: var(--bg-color);
+    padding: var(--padding-y-xl) 0;
+}
+
+#faq .section-header {
+    text-align: center;
+    margin-bottom: 3.75rem;
+}
+
+#faq .section-header strong {
+    display: block;
+    color: var(--brand-color-primary);
+    font-size: var(--fs-span);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.625rem;
+}
+
+#faq .section-header h2 {
+    font-size: var(--fs-h1);
+    color: var(--text-color-secondary);
+    margin: 0;
+    font-weight: var(--fw-bold);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--surface-color);
+    border-radius: 0.625rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--stroke-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: var(--brand-color-primary);
+    box-shadow: 0 5px 15px rgba(1, 66, 166, 0.1);
+}
+
+.faq-item.active {
+    background: var(--bg-color);
+    border-color: var(--brand-color-primary);
+    box-shadow: 0 5px 20px rgba(1, 66, 166, 0.15);
+}
+
+.faq-question {
+    padding: 1.563rem 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+    background: rgba(1, 66, 166, 0.05);
+}
+
+.faq-question h3 {
+    font-size: var(--fs-h3);
+    color: var(--text-color-secondary);
+    margin: 0;
+    font-weight: var(--fw-bold);
+    flex: 1;
+    padding-right: 1.25rem;
+}
+
+.faq-toggle {
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--brand-color-primary), var(--brand-color-secondary));
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: var(--fw-bold);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.faq-item.active .faq-toggle {
+    transform: rotate(45deg);
+    background: #e74c3c;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: var(--bg-color);
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+.faq-answer p {
+    padding: 0 1.875rem 1.563rem;
+    color: var(--text-color-primary);
+    line-height: 1.6;
+    font-size: var(--fs-paragraph);
+    margin: 0;
+    border-top: 1px solid var(--stroke-color);
+    padding-top: 1.25rem;
+}

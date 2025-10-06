@@ -1,17 +1,14 @@
 a.social {
-
   --bg-img: "";
   background-image: var(--bg-img);
   width: 1.5rem;
   height: 1.5rem;
   display: block;
-
   -webkit-background-clip: initial;
   background-clip: initial;
 
   &[aria-label="tiktok"] {
     --bg-img: url(../Assets/Icons/tiktok.svg);
-
     &:hover {
       --bg-img: url(../Assets/Icons/tiktok-hover.svg);
     }
@@ -19,7 +16,6 @@ a.social {
 
   &[aria-label="instagram"] {
     --bg-img: url(../Assets/Icons/instagram.svg);
-
     &:hover {
       --bg-img: url(../Assets/Icons/instagram-hover.svg);
     }
@@ -27,7 +23,6 @@ a.social {
 
   &[aria-label="twitter"] {
     --bg-img: url(../Assets/Icons/twitter.svg);
-
     &:hover {
       --bg-img: url(../Assets/Icons/twitter-hover.svg);
     }
@@ -35,7 +30,6 @@ a.social {
 
   &[aria-label="discord"] {
     --bg-img: url(../Assets/Icons/discord.svg);
-
     &:hover {
       --bg-img: url(../Assets/Icons/discord-hover.svg);
     }
