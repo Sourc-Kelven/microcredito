@@ -29,24 +29,24 @@
   --fw-base: 400;
 
   /* FONT SIZE*/
-  --fs-h1: 2.5rem;
-  --fs-h2: 1.5rem;
-  --fs-h3: 1.25rem;
+  --fs-h1: 2rem;
+  --fs-h2: 1.25rem;
+  --fs-h3: 1rem;
   --fs-paragraph: 1rem;
   --fs-span: 0.875rem;
 
   /* CONTAINER SPACE */
-  --padding-x: 1.5rem;
-  --padding-y-base: 1rem;
-  --padding-y-large: 1.5rem;
-  --padding-y-xl: 3rem;
+  --padding-x: 0.1rem;
+  --padding-y-base: 0.5rem;
+  --padding-y-large: 1rem;
+  --padding-y-xl: 1.5rem;
 }
 
 html {
   font-family: var(--ff-sans);
   font-weight: var(--fw-base);
   font-size: var(--fs-paragraph);
-  line-height: 1.6;
+  line-height: 1.4;
   color: var(--text-color-primary);
   background-color: var(--bg-color);
   overflow-x: hidden;
@@ -62,7 +62,7 @@ body {
 h1,
 h2,
 h3 {
-  line-height: 1.2;
+  line-height: 1;
   font-weight: var(--fw-bold);
   letter-spacing: -0.04em;
 }
@@ -100,12 +100,12 @@ img {
 
 @media (width >= 80em) {
   :root {
-    --fs-h1: 4rem;
-    --fs-h2: 3rem;
-    --fs-h3: 2rem;
-    --padding-x: 2rem;
-    --padding-y-base: 1.5rem;
-    --padding-y-large: 2.5rem;
-    --padding-y-xl: 5rem;
+    --fs-h1: 3rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1rem;
+    --padding-x: 1rem;
+    --padding-y-base: 0.75rem;
+    --padding-y-large: 1.25rem;
+    --padding-y-xl: 2.5rem;
   }
 }

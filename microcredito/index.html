@@ -21,118 +21,82 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="container padding-y-base">
-        <nav class="flex items-center gap-1.5">
-          <a href="#">
-            <img src="Assets/Images/logo.jpg" alt="Erikalya Microcrédito" />
-          </a>
-
-          <a href="#about" class="desktop-only">Sobre Nós</a>
-          <a href="#why-choose-us" class="desktop-only">Porque Escolher</a>
-          <a href="#features" class="desktop-only">Serviços</a>
-          <a href="#pricing" class="desktop-only">Planos</a>
-          <a href="#testimonials" class="desktop-only">Depoimentos</a>
-          <a href="#download" class="btn btn-sm">Fale Conosco</a>
+      <div class="container">
+        <a href="#">
+          <img src="Assets/Images/logo.jpg" alt="Erikalya Microcrédito" />
+        </a>
+        
+        <nav class="header-nav">
+          <div class="nav-links">
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#services">Serviços</a>
+            <a href="#pricing">Planos</a>
+            <a href="#simulador">Simulador</a>
+            <a href="#download">Contato</a>
+          </div>
+          <a href="#download" class="btn">Solicitar Crédito</a>
+          
+          <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </nav>
+      </div>
+      
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <div class="mobile-nav-links">
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#why-choose-us">Serviços</a>
+            <a href="#pricing">Planos</a>
+            <a href="#simulador">Simulador</a>
+            <a href="#price">Contato</a>
+            <a href="#download">Contato</a>
+          <a href="#download" class="btn">Solicitar Crédito</a>
+        </div>
       </div>
     </header>
 
     <!-- Hero -->
     <section id="hero" class="fade-in">
-      <!-- Carousel Background -->
-      <div class="hero-carousel">
-        <div class="carousel-track">
-          <div class="carousel-slide">
-            <img
-              src="/microcredito/Assets/Images/Empreendedora africana feliz com seu negócio.jpg"
-              alt="Empreendedora africana feliz com seu negócio"
-              class="carousel-image"
-              loading="eager"
-            />
-          </div>
-          <div class="carousel-slide">
-            <img
-              src="/microcredito/Assets/Images/Grupo de empreendedores africanos em reunião.jpg"
-              alt="Grupo de empreendedores africanos em reunião"
-              class="carousel-image"
-              loading="eager"
-            />
-          </div>
-          <div class="carousel-slide">
-            <img
-              src="/microcredito/Assets/Images/Mulher africana administrando seu pequeno negócio.jpg"
-              alt="Mulher africana administrando seu pequeno negócio"
-              class="carousel-image"
-              loading="eager"
-            />
-          </div>
-        </div>
-      </div>
-
-      <!-- Controles do Carousel -->
-      <div class="carousel-controls">
-        <button class="carousel-btn prev-btn" aria-label="Slide anterior">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="carousel-btn next-btn" aria-label="Próximo slide">
-          <i class="fas fa-chevron-right"></i>
-        </button>
-      </div>
-
-      <!-- Conteúdo Principal -->
       <div class="hero-content">
-        <h1 class="hero-title">Impulsione seus sonhos com crédito acessível</h1>
-        <h3 class="hero-subtitle">
-          Microcrédito rápido, seguro e transparente para empreendedores
-          moçambicanos
-        </h3>
-
-        <!-- Botões Perfeitamente Alinhados -->
+        <h1 class="hero-title">
+          <span>MICROCRÉDITO</span>
+          FAÇA SEU NEGÓCIO CRESCER AGORA
+        </h1>
+        <p class="hero-subtitle">
+          Juntos vamos ajudá-lo a definir metas, escolher as ferramentas certas 
+          e desenvolver o seu negócio para torná-lo diferenciado.
+        </p>
+        
         <div class="hero-buttons">
-          <a href="#simulador" class="hero-btn hero-btn-primary">
-            <i class="fas fa-calculator"></i>
-            Simule seu Crédito
+          <a href="#get-started" class="hero-btn hero-btn-primary">
+            Solicitar Crédito
           </a>
-          <a href="#download" class="hero-btn hero-btn-secondary">
-            <i class="fas fa-headset"></i>
-            Fale Conosco
+          <a href="#read-more" class="hero-btn hero-btn-secondary">
+            Saiba Mais
           </a>
         </div>
-
-        <!-- Estatísticas Compactas -->
+        
         <div class="hero-stats">
           <div class="hero-stat">
-            <span class="hero-stat-number">2+</span>
-            <span class="hero-stat-label">Clientes</span>
+            <span class="hero-stat-number">500+</span>
+            <span class="hero-stat-label">Projetos Concluídos</span>
           </div>
           <div class="hero-stat">
             <span class="hero-stat-number">95%</span>
-            <span class="hero-stat-label">Aprovação</span>
+            <span class="hero-stat-label">Taxa de Sucesso</span>
           </div>
           <div class="hero-stat">
-            <span class="hero-stat-number">24h</span>
-            <span class="hero-stat-label">Análise</span>
+            <span class="hero-stat-number">24/7</span>
+            <span class="hero-stat-label">Suporte</span>
           </div>
         </div>
       </div>
-
-      <!-- Indicadores do Carousel -->
-      <div class="carousel-indicators">
-        <button
-          class="carousel-indicator active"
-          aria-label="Ir para slide 1"
-        ></button>
-        <button
-          class="carousel-indicator"
-          aria-label="Ir para slide 2"
-        ></button>
-        <button
-          class="carousel-indicator"
-          aria-label="Ir para slide 3"
-        ></button>
-      </div>
-
-      <!-- Scroll Indicator -->
+      
       <div class="scroll-indicator">
         <i class="fas fa-chevron-down"></i>
       </div>
@@ -140,46 +104,27 @@
 
     <!-- About -->
     <section id="about" class="fade-in">
-      <div class="container even-columns padding-y-xl items-center">
-        <div>
+      <div class="container even-columns padding-y-xl">
+        <!-- Conteúdo Textual -->
+        <div class="about-content">
           <div class="section-header">
-            <strong>Sobre Nós</strong>
-            <h2>Erikalya Microcrédito</h2>
+            <strong>QUEM SOMOS</strong>
+            <h2>OFERECEMOS SOLUÇÕES DE NEGÓCIO EXCELENTES E EFICIENTES</h2>
             <p>
-              Há 1 ano no mercado, a Erikalya Microcrédito nasceu com a missão
-              de democratizar o acesso ao crédito para empreendedores, famílias
-              e jovens em Moçambique.
+              A Erikalya Microcrédito é uma instituição financeira moçambicana comprometida 
+              com o desenvolvimento económico local. Oferecemos soluções de crédito acessíveis 
+              para pequenos empreendedores e empresas familiares, com processos simplificados 
+              e atendimento personalizado em todo o território nacional.
             </p>
-            <p>
-              Somos uma instituição financeira comprometida com o
-              desenvolvimento econômico local, oferecendo soluções financeiras
-              acessíveis que transformam sonhos em realidade.
-            </p>
-            <p>
-              Nossa equipe é formada por profissionais dedicados a garantir
-              transparência, ética e proximidade com cada cliente, entendendo
-              suas necessidades específicas.
-            </p>
-
-            <div class="stats-grid">
-              <div class="stat-item">
-                <div class="stat-number">2+</div>
-                <div class="stat-label">Clientes Atendidos</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number">1</div>
-                <div class="stat-label">Anos de Experiência</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-number">95%</div>
-                <div class="stat-label">Taxa de Aprovação</div>
-              </div>
-            </div>
+            <a href="#read-more" class="read-more-btn">
+              SABER MAIS
+            </a>
           </div>
         </div>
+
+        <!-- Imagem -->
         <div class="about-image">
           <img
-            class="desktop-only"
             src="Assets/Images/image 2.jpg"
             alt="Equipe Erikalya Microcrédito"
           />
@@ -197,8 +142,8 @@
     <section id="why-choose-us" class="fade-in why-choose-section">
       <div class="container padding-y-xl">
         <div class="section-header">
-          <strong>Porque Escolher a Erikalya</strong>
-          <h2>Diferenciais que Fazem a Diferença</h2>
+          <strong>Melhores Soluções</strong>
+          <h2>Porque Escolher a Erikalya</h2>
         </div>
 
         <div class="advantages-grid">
@@ -206,284 +151,225 @@
             <div class="advantage-icon">
               <i class="fas fa-rocket"></i>
             </div>
-            <h3>Processo Ágil</h3>
-            <p>
-              Análise de crédito em até 24 horas e liberação em 48 horas. Menos
-              burocracia, mais resultados.
-            </p>
+            <div class="advantage-content">
+              <h3 data-number="01">Processo Ágil</h3>
+              <p>
+                Análise de crédito em até 24 horas e liberação em 48 horas. Menos
+                burocracia, mais resultados.
+              </p>
+            </div>
           </div>
 
           <div class="advantage-card">
             <div class="advantage-icon">
               <i class="fas fa-hand-holding-usd"></i>
             </div>
-            <h3>Taxas Competitivas</h3>
-            <p>
-              Oferecemos algumas das menores taxas do mercado, com planos que
-              cabem no seu orçamento.
-            </p>
+            <div class="advantage-content">
+              <h3 data-number="02">Taxas Competitivas</h3>
+              <p>
+                Oferecemos algumas das menores taxas do mercado, com planos que
+                cabem no seu orçamento.
+              </p>
+            </div>
           </div>
 
           <div class="advantage-card">
             <div class="advantage-icon">
               <i class="fas fa-user-friends"></i>
             </div>
-            <h3>Atendimento Personalizado</h3>
-            <p>
-              Consultores especializados acompanham você em todas as etapas do
-              processo.
-            </p>
+            <div class="advantage-content">
+              <h3 data-number="03">Atendimento Personalizado</h3>
+              <p>
+                Consultores especializados acompanham você em todas as etapas do
+                processo.
+              </p>
+            </div>
           </div>
 
           <div class="advantage-card">
             <div class="advantage-icon">
               <i class="fas fa-shield-alt"></i>
             </div>
-            <h3>Segurança Garantida</h3>
-            <p>
-              Seguimos todas as normas do Banco de Moçambique. Seus dados estão
-              protegidos.
-            </p>
+            <div class="advantage-content">
+              <h3 data-number="04">Segurança Garantida</h3>
+              <p>
+                Seguimos todas as normas do Banco de Moçambique. Seus dados estão
+                protegidos.
+              </p>
+            </div>
           </div>
 
           <div class="advantage-card">
             <div class="advantage-icon">
               <i class="fas fa-map-marker-alt"></i>
             </div>
-            <h3>Atuação Nacional</h3>
-            <p>
-              Estamos presentes em todas as províncias de Moçambique, perto de
-              você.
-            </p>
+            <div class="advantage-content">
+              <h3 data-number="05">Atuação Nacional</h3>
+              <p>
+                Estamos presentes em todas as províncias de Moçambique, perto de
+                você.
+              </p>
+            </div>
           </div>
 
           <div class="advantage-card">
             <div class="advantage-icon">
               <i class="fas fa-graduation-cap"></i>
             </div>
-            <h3>Capacitação</h3>
-            <p>
-              Oferecemos orientação financeira para ajudar no sucesso do seu
-              negócio.
-            </p>
+            <div class="advantage-content">
+              <h3 data-number="06">Capacitação</h3>
+              <p>
+                Oferecemos orientação financeira para ajudar no sucesso do seu
+                negócio.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- How It Works -->
-<section id="how-it-works" class="fade-in">
-    <!-- Background com imagem -->
-    <div class="how-it-works-bg">
-        <div class="bg-overlay"></div>
-        <img 
+    <section id="how-it-works" class="fade-in">
+      <div class="container padding-y-xl">
+        <!-- Conteúdo Principal -->
+        <div class="how-it-works-content">
+          <div class="section-header">
+            <strong>Apresentando produtos e serviços</strong>
+            <h1>adequados para si</h1>
+            <h2>Descubra soluções financeiras personalizadas para suas necessidades</h2>
+          </div>
+
+          <div class="services-grid">
+            <!-- Negócio Online -->
+            <div class="service-card">
+              <h3>Microcrédito Digital</h3>
+              <p>
+                Explore o poder de um sistema bancário mais simples e inteligente. 
+                Aceda a mais de 50 serviços e ferramentas concebidos para ajudar 
+                o seu negócio a crescer de forma eficiente.
+              </p>
+              <a href="#apply" class="service-btn">
+                Solicitar online
+              </a>
+            </div>
+
+            <!-- Plano de Negócios -->
+            <div class="service-card">
+              <h3>Consultoria Empresarial</h3>
+              <p>
+                Desde planos de negócio até estratégias de expansão, oferecemos 
+                uma vasta gama de serviços de consultoria com orientação especializada 
+                para o seu empreendimento.
+              </p>
+              <a href="#first-step" class="service-btn">
+                Dar o primeiro passo
+              </a>
+            </div>
+
+            <!-- Banco Móvel -->
+            <div class="service-card">
+              <h3>Crédito via Mobile</h3>
+              <p>
+                Explore o poder de um sistema bancário mais simples e inteligente. 
+                Aceda a mais de 50 serviços diretamente do seu dispositivo móvel, 
+                a qualquer hora e em qualquer lugar.
+              </p>
+              <a href="#find-out" class="service-btn">
+                Descobrir mais
+              </a>
+            </div>
+
+            <!-- Depósito Online -->
+            <div class="service-card">
+              <h3>Poupança e Investimento</h3>
+              <p>
+                Explore o poder de um sistema bancário mais simples e inteligente. 
+                Oferecemos serviços de poupança com taxas competitivas e opções 
+                de investimento seguras.
+              </p>
+              <a href="#learn-more" class="service-btn">
+                Saber mais
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagem -->
+        <div class="how-it-works-image">
+          <img 
             src="/microcredito/Assets/Images/Empreendedores africanos trabalhando juntos.jpg" 
             alt="Empreendedores africanos trabalhando juntos" 
-            class="bg-image"
             loading="lazy"
-        >
-    </div>
-
-    <div class="container padding-y-xl">
-        <div class="section-header">
-            <strong>Como Funciona</strong>
-            <h2>4 Passos Simples para seu Crédito</h2>
-            <p class="section-subtitle">Do sonho à realização, acompanhamos você em cada etapa</p>
-        </div>
-
-        <!-- Timeline Horizontal -->
-        <div class="timeline-container">
-            <div class="timeline-track">
-                <div class="timeline-step">
-                    <div class="step-visual">
-                        <div class="step-icon">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                        <div class="step-connector"></div>
-                    </div>
-                    <div class="step-content">
-                        <div class="step-number">01</div>
-                        <h3>Simulação</h3>
-                        <p>Use nosso simulador para calcular parcelas e condições ideais para você em poucos minutos.</p>
-                        <div class="step-duration">
-                            <i class="fas fa-clock"></i>
-                            <span>5 minutos</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-step">
-                    <div class="step-visual">
-                        <div class="step-icon">
-                            <i class="fas fa-file-upload"></i>
-                        </div>
-                        <div class="step-connector"></div>
-                    </div>
-                    <div class="step-content">
-                        <div class="step-number">02</div>
-                        <h3>Documentação</h3>
-                        <p>Envie os documentos necessários de forma digital, simples e 100% segura.</p>
-                        <div class="step-duration">
-                            <i class="fas fa-clock"></i>
-                            <span>15 minutos</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-step">
-                    <div class="step-visual">
-                        <div class="step-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div class="step-connector"></div>
-                    </div>
-                    <div class="step-content">
-                        <div class="step-number">03</div>
-                        <h3>Análise</h3>
-                        <p>Nossa equipe especializada analisa seu pedido com agilidade e total transparência.</p>
-                        <div class="step-duration">
-                            <i class="fas fa-clock"></i>
-                            <span>24 horas</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-step">
-                    <div class="step-visual">
-                        <div class="step-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                    </div>
-                    <div class="step-content">
-                        <div class="step-number">04</div>
-                        <h3>Liberação</h3>
-                        <p>Após aprovação, o valor é depositado diretamente na sua conta bancária.</p>
-                        <div class="step-duration">
-                            <i class="fas fa-clock"></i>
-                            <span>48 horas</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CTA no final -->
-        <div class="how-it-works-cta">
-            <div class="cta-content">
-                <h3>Pronto para começar?</h3>
-                <p>Junte-se a empreendedores que já transformaram seus sonhos em realidade</p>
-                <a href="#simulador" class="cta-btn">
-                    <i class="fas fa-play-circle"></i>
-                    Iniciar Simulação
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Features -->
-    <section id="features" class="fade-in">
-      <div class="section-header">
-        <strong>Nossos Serviços</strong>
-        <h2>Soluções Financeiras para Cada Necessidade</h2>
-      </div>
-      <div class="cards container padding-y-xl grid gap-1.5">
-        <div class="card padding-y-large padding-x">
-          <div class="card-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="32"
-              height="32"
-              x="0"
-              y="0"
-              viewBox="0 0 512 512"
-              style="enable-background: new 0 0 512 512"
-              xml:space="preserve"
-              class=""
-            >
-              <!-- SVG content -->
-            </svg>
-          </div>
-          <h3>Taxas Competitivas</h3>
-          <p>
-            Oferecemos taxas justas e competitivas, garantindo que seu crédito
-            seja acessível para seu projeto ou negócio.
-          </p>
-          <div class="card-action">
-            <a href="#simulador" class="btn btn-primary">
-              <i class="fas fa-info-circle"></i>
-              Saiba Mais
-            </a>
-          </div>
-        </div>
-
-        <div class="card padding-y-large padding-x">
-          <div class="card-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="32"
-              height="32"
-              x="0"
-              y="0"
-              viewBox="0 0 64 64"
-              style="enable-background: new 0 0 512 512"
-              xml:space="preserve"
-              class=""
-            >
-              <!-- SVG content -->
-            </svg>
-          </div>
-          <h3>Atendimento Personalizado</h3>
-          <p>
-            Nossa equipe especializada acompanha você em todas as etapas do
-            processo de crédito, de forma transparente e eficiente.
-          </p>
-          <div class="card-action">
-            <a href="#download" class="btn btn-primary">
-              <i class="fas fa-headset"></i>
-              Fale Conosco
-            </a>
-          </div>
-        </div>
-
-        <div class="card padding-y-large padding-x">
-          <div class="card-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              version="1.1"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              width="32"
-              height="32"
-              x="0"
-              y="0"
-              viewBox="0 0 512 512"
-              style="enable-background: new 0 0 512 512"
-              xml:space="preserve"
-              class=""
-            >
-              <!-- SVG content -->
-            </svg>
-          </div>
-          <h3>Aprovação Rápida</h3>
-          <p>
-            Com processos simplificados e tecnologia avançada, você recebe a
-            aprovação do seu crédito em poucas horas.
-          </p>
-          <div class="card-action">
-            <a href="#simulador" class="btn btn-primary">
-              <i class="fas fa-bolt"></i>
-              Simular Agora
-            </a>
-          </div>
+          >
         </div>
       </div>
     </section>
 
+    <!-- Features -->
+    <section id="features" class="fade-in">
+      <div class="container padding-y-xl">
+        <div class="features-grid">
+          <!-- Conteúdo Principal -->
+          <div class="features-content">
+            <div class="section-header">
+              <strong>Como Funciona</strong>
+              <h1>Nosso Processo de Trabalho</h1>
+              <h2>Um processo simples e transparente para seu crédito</h2>
+            </div>
 
+            <div class="working-process">
+              <!-- Step 01 -->
+              <div class="process-step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                  <h3>Submissão da Candidatura</h3>
+                  <p>
+                    Preencha o formulário online ou visite uma das nossas agências. 
+                    O processo é simples e requer documentação básica.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 02 -->
+              <div class="process-step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                  <h3>Análise e Verificação</h3>
+                  <p>
+                    Nossa equipa especializada analisa o seu pedido e verifica 
+                    a documentação para garantir segurança e transparência.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 03 -->
+              <div class="process-step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                  <h3>Aprovação do Crédito</h3>
+                  <p>
+                    Após análise positiva, o seu crédito é aprovado e preparado 
+                    para liberação em até 48 horas.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 04 -->
+              <div class="process-step">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                  <h3>Liberação do Crédito</h3>
+                  <p>
+                    O valor aprovado é disponibilizado na sua conta, com total 
+                    transparência sobre prazos e condições de pagamento.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Pricing (Planos) -->
     <section id="pricing" class="fade-in">
@@ -492,28 +378,46 @@
           <strong>Planos de Crédito</strong>
           <h2>Escolha o plano que se adapta às suas necessidades</h2>
         </div>
+        
         <div class="pricing-cards">
-          <div class="pricing-card padding-y-large padding-x">
-            <h3>Microcrédito Inicial</h3>
-            <p>Para começar seu projeto com facilidade.</p>
-            <div class="price-amount">Até 50.000 MZN</div>
-            <a href="#download" class="btn btn-primary">Adquira Agora</a>
-            <div class="card-separator"></div>
+          <!-- Plano Starter -->
+          <div class="pricing-card">
+            <div class="plan-header">
+              <h3>MICROCRÉDITO</h3>
+              <div class="price">
+                <span class="amount">Até 50.000</span>
+                <span class="period">MZN</span>
+              </div>
+            </div>
+            
+            <a href="#download" class="select-btn">Selecionar</a>
+            
+            <div class="plan-duration">Prazo: 6 meses</div>
+            
             <ul role="list" class="features-list">
-              <li>Aprovação rápida</li>
+              <li>Aprovação em 24h</li>
               <li>Documentação simples</li>
-              <li>Atendimento personalizado</li>
-              <li>Taxas competitivas</li>
               <li>Sem necessidade de fiador</li>
+              <li>Taxas competitivas</li>
+              <li>Atendimento personalizado</li>
             </ul>
           </div>
 
-          <div class="pricing-card padding-y-large padding-x">
-            <h3>Crédito Empresarial</h3>
-            <p>Ideal para impulsionar seu negócio.</p>
-            <div class="price-amount">Até 200.000 MZN</div>
-            <a href="#download" class="btn btn-primary">Adquira Agora</a>
-            <div class="card-separator"></div>
+          <!-- Plano Basic -->
+          <div class="pricing-card popular">
+            <div class="popular-badge">Mais Popular</div>
+            <div class="plan-header">
+              <h3>CRÉDITO EMPRESARIAL</h3>
+              <div class="price">
+                <span class="amount">Até 200.000</span>
+                <span class="period">MZN</span>
+              </div>
+            </div>
+            
+            <a href="#download" class="select-btn">Selecionar</a>
+            
+            <div class="plan-duration">Prazo: 12-24 meses</div>
+            
             <ul role="list" class="features-list">
               <li>Consultoria financeira</li>
               <li>Flexibilidade de pagamento</li>
@@ -523,12 +427,20 @@
             </ul>
           </div>
 
-          <div class="pricing-card padding-y-large padding-x">
-            <h3>Crédito Comunitário</h3>
-            <p>Para associações, grupos e iniciativas coletivas.</p>
-            <div class="price-amount">Até 500.000 MZN</div>
-            <a href="#download" class="btn btn-primary">Adquira Agora</a>
-            <div class="card-separator"></div>
+          <!-- Plano Enterprise -->
+          <div class="pricing-card">
+            <div class="plan-header">
+              <h3>CRÉDITO COMUNITÁRIO</h3>
+              <div class="price">
+                <span class="amount">Até 500.000</span>
+                <span class="period">MZN</span>
+              </div>
+            </div>
+            
+            <a href="#download" class="select-btn">Selecionar</a>
+            
+            <div class="plan-duration">Prazo: 24-36 meses</div>
+            
             <ul role="list" class="features-list">
               <li>Suporte personalizado</li>
               <li>Processos transparentes</li>
@@ -540,127 +452,90 @@
         </div>
       </div>
     </section>
-    <!-- FAQ Section -->
-    <section id="faq" class="fade-in">
+
+    <!-- Simulador -->
+    <section id="simulador" class="fade-in">
       <div class="container padding-y-xl">
-        <div class="section-header">
-          <strong>Perguntas Frequentes</strong>
-          <h2>Tire suas Dúvidas</h2>
-        </div>
-
-        <div class="faq-container">
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>Quais documentos são necessários?</h3>
-              <span class="faq-toggle">+</span>
+        <!-- Conteúdo Textual -->
+        <div class="simulator-content">
+          <div class="section-header">
+            <strong>Apresentação da Empresa</strong>
+            <h1>Nossos Créditos Farão Seus Sonhos Tornarem-se Realidade</h1>
+            <h2>Soluções de crédito personalizadas para realizar seus objetivos</h2>
+          </div>
+          
+          <p class="simulator-description">
+            A Erikalya Microcrédito oferece diversas opções de financiamento adaptadas 
+            às necessidades específicas de cada cliente. Com anos de experiência no mercado 
+            moçambicano, desenvolvemos soluções personalizadas para microempreendedores, 
+            pequenas empresas e comunidades, sempre com foco no desenvolvimento económico local.
+          </p>
+          
+          <!-- Valores de Exemplo -->
+          <div class="company-info">
+            <div class="info-item">
+              <span class="info-number">5.000</span>
+              <span class="info-label">Valor Mínimo</span>
             </div>
-            <div class="faq-answer">
-              <p>
-                Documento de identificação, comprovante de residência e
-                comprovante de renda. Para pessoas jurídicas, adicionalmente
-                contrato social atualizado.
-              </p>
+            <div class="info-item">
+              <span class="info-number">50.000</span>
+              <span class="info-label">Valor Médio</span>
+            </div>
+            <div class="info-item">
+              <span class="info-number">500.000</span>
+              <span class="info-label">Valor Máximo</span>
             </div>
           </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>Qual o prazo para aprovação?</h3>
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Nossa análise é realizada em até 24 horas úteis. Em casos
-                especiais, pode levar até 48 horas.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>Posso quitar antecipadamente?</h3>
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Sim, oferecemos condições especiais para quitação antecipada sem
-                multas por pagamento adiantado.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>Qual o valor mínimo e máximo para empréstimo?</h3>
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Oferecemos crédito a partir de 5.000 MZN até 500.000 MZN,
-                dependendo do perfil e necessidade do cliente.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question">
-              <h3>Preciso de fiador para solicitar o crédito?</h3>
-              <span class="faq-toggle">+</span>
-            </div>
-            <div class="faq-answer">
-              <p>
-                Não é obrigatório para todos os casos. Avaliamos cada situação
-                individualmente considerando sua capacidade de pagamento.
-              </p>
-            </div>
+          
+          <!-- Certificações -->
+          <div class="certifications">
+            <h3>Empresa Certificada e Premiada</h3>
+            <p>A Erikalya é uma instituição financeira autorizada pelo Banco de Moçambique, reconhecida por seus serviços confiáveis e taxas competitivas no sector de microcrédito.</p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="container" id="simulador">
-      <div class="container">
-        <h2 class="section-title">Simule seu Crédito</h2>
 
-        <form id="form-simulador" class="simulador-form">
-          <div class="form-group">
-            <label for="valor">Valor do Crédito (MZN)</label>
-            <input
-              type="number"
-              id="valor"
-              class="input"
-              placeholder="Ex: 50 000"
-              required
-            />
-          </div>
+        <!-- Formulário do Simulador -->
+        <div class="simulator-form-container">
+          <form class="simulator-form">
+            <!-- Slider do Valor -->
+            <div class="slider-group">
+              <div class="slider-header">
+                <label>Valor do Empréstimo</label>
+                <span class="slider-value">50.000 MZN</span>
+              </div>
+              <input type="range" class="slider" min="5000" max="500000" value="50000" step="5000">
+            </div>
 
-          <div class="form-group">
-            <label for="juros">Taxa de Juros Anual (%)</label>
-            <input
-              type="number"
-              id="juros"
-              class="input"
-              placeholder="Ex: 15"
-              required
-            />
-          </div>
+            <!-- Slider do Prazo -->
+            <div class="slider-group">
+              <div class="slider-header">
+                <label>Prazo do Empréstimo</label>
+                <span class="slider-value">12 Meses</span>
+              </div>
+              <input type="range" class="slider" min="3" max="36" value="12" step="3">
+            </div>
 
-          <div class="form-group">
-            <label for="prazo">Prazo (meses)</label>
-            <input
-              type="number"
-              id="prazo"
-              class="input"
-              placeholder="Ex: 12"
-              required
-            />
-          </div>
+            <!-- Resultados -->
+            <div class="results-container">
+              <div class="result-item">
+                <span class="result-label">Prestação Mensal</span>
+                <span class="result-value highlight">4.785 MZN</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Prazo de Utilização</span>
+                <span class="result-value">12 Meses</span>
+              </div>
+              <div class="result-item">
+                <span class="result-label">Total a Pagar</span>
+                <span class="result-value highlight">57.420 MZN</span>
+              </div>
+            </div>
 
-          <button type="submit" class="btn-primary">Calcular</button>
-        </form>
-
-        <div id="resultado" class="resultado">
-          <p id="mensalidade" class="resultado-item"></p>
-          <p id="total" class="resultado-item"></p>
+            <!-- Botão de Aplicação -->
+            <a href="#apply" class="apply-btn">
+              Solicitar Crédito
+            </a>
+          </form>
         </div>
       </div>
     </section>
@@ -668,39 +543,39 @@
     <!-- Download / Contato -->
     <section id="download" class="fade-in">
       <div class="container padding-y-xl">
-        <div class="contact-card padding-x even-columns items-center">
+        <div class="contact-card">
           <div class="contact-content">
             <div class="contact-header">
-              <strong>Fale Conosco</strong>
-              <h2>Estamos prontos para atender você</h2>
+              <strong>Entre em Contacto</strong>
+              <h2>Pronto para Começar?</h2>
             </div>
             <p class="contact-description">
-              Entre em contato, tire suas dúvidas ou simule seu crédito. Nossa
-              equipe responderá rapidamente e com atenção total.
+              Entre em contacto, tire suas dúvidas ou simule seu crédito. Nossa
+              equipa responderá rapidamente e com atenção total.
             </p>
 
             <div class="contact-info">
               <div class="contact-method">
                 <i class="fas fa-phone"></i>
                 <div>
-                  <strong>Telefone</strong>
-                  <p>+258 869723000</p>
+                  <strong>Ligue-nos</strong>
+                  <p>+258 84 123 4567</p>
                 </div>
               </div>
 
               <div class="contact-method">
                 <i class="fas fa-envelope"></i>
                 <div>
-                  <strong>E-mail</strong>
-                  <p>info@visum.co.mz</p>
+                  <strong>Envie-nos Email</strong>
+                  <p>info@erikalyamicrocredito.co.mz</p>
                 </div>
               </div>
 
               <div class="contact-method">
                 <i class="fas fa-map-marker-alt"></i>
                 <div>
-                  <strong>Endereço</strong>
-                  <p>Maputo, mozambique</p>
+                  <strong>Visite-nos</strong>
+                  <p>Maputo, Moçambique</p>
                 </div>
               </div>
             </div>
@@ -709,7 +584,7 @@
           <div class="contact-form-container">
             <form id="contact-form" class="contact-form">
               <div class="form-group">
-                <label for="nome">Nome</label>
+                <label for="nome">Seu Nome</label>
                 <input
                   type="text"
                   id="nome"
@@ -720,12 +595,12 @@
               </div>
 
               <div class="form-group">
-                <label for="email">E-mail</label>
+                <label for="email">Endereço de Email</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="Digite seu e-mail"
+                  placeholder="Digite seu email"
                   required
                 />
               </div>
@@ -742,7 +617,7 @@
               </div>
 
               <div class="form-group">
-                <label for="mensagem">Mensagem</label>
+                <label for="mensagem">Sua Mensagem</label>
                 <textarea
                   id="mensagem"
                   name="mensagem"
@@ -761,7 +636,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="fade-in">
+    <footer id="contact" class="fade-in">
       <div class="container padding-y-xl grid">
         <section class="grid top">
           <a href="#">Erikalya Microcrédito</a>
@@ -783,7 +658,7 @@
             <ul role="list" class="grid gap-1.5">
               <li class="title">Ajuda</li>
               <li><a href="#faq">Perguntas Frequentes</a></li>
-              <li><a href="#download">Contato</a></li>
+              <li><a href="#download">Contacto</a></li>
               <li><a href="#">Política de Privacidade</a></li>
             </ul>
           </nav>

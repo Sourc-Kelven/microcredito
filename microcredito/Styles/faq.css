@@ -2,11 +2,20 @@
 #faq {
     background-color: var(--bg-color);
     padding: var(--padding-y-xl) 0;
+    position: relative;
+}
+
+#faq .container {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 4rem;
+    align-items: start;
 }
 
 #faq .section-header {
-    text-align: center;
-    margin-bottom: 3.75rem;
+    text-align: left;
+    margin-bottom: 3rem;
+    grid-column: 1 / -1;
 }
 
 #faq .section-header strong {
@@ -27,41 +36,42 @@
 }
 
 .faq-container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 100%;
 }
 
 .faq-item {
     background: var(--surface-color);
-    border-radius: 0.625rem;
-    margin-bottom: 1.25rem;
+    border-radius: 0;
+    margin-bottom: 0.75rem;
     border: 1px solid var(--stroke-color);
+    border-left: 4px solid transparent;
     overflow: hidden;
     transition: all 0.3s ease;
 }
 
 .faq-item:hover {
-    border-color: var(--brand-color-primary);
-    box-shadow: 0 5px 15px rgba(1, 66, 166, 0.1);
+    border-left-color: var(--brand-color-primary);
+    box-shadow: 0 2px 8px rgba(1, 66, 166, 0.08);
 }
 
 .faq-item.active {
     background: var(--bg-color);
-    border-color: var(--brand-color-primary);
-    box-shadow: 0 5px 20px rgba(1, 66, 166, 0.15);
+    border-left-color: var(--brand-color-primary);
+    box-shadow: 0 2px 12px rgba(1, 66, 166, 0.12);
 }
 
 .faq-question {
-    padding: 1.563rem 1.875rem;
+    padding: 1.25rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    background: var(--surface-color);
 }
 
 .faq-question:hover {
-    background: rgba(1, 66, 166, 0.05);
+    background: rgba(1, 66, 166, 0.03);
 }
 
 .faq-question h3 {
@@ -71,26 +81,46 @@
     font-weight: var(--fw-bold);
     flex: 1;
     padding-right: 1.25rem;
+    font-size: 1.1rem;
 }
 
 .faq-toggle {
-    width: 1.875rem;
-    height: 1.875rem;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--brand-color-primary), var(--brand-color-secondary));
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0;
+    background: var(--brand-color-primary);
     color: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: var(--fw-bold);
     transition: all 0.3s ease;
     flex-shrink: 0;
+    position: relative;
 }
 
-.faq-item.active .faq-toggle {
-    transform: rotate(45deg);
-    background: #e74c3c;
+.faq-toggle:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    transition: all 0.3s ease;
+}
+
+.faq-toggle:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active .faq-toggle:after {
+    transform: rotate(90deg);
+    opacity: 0;
 }
 
 .faq-answer {
@@ -101,15 +131,132 @@
 }
 
 .faq-item.active .faq-answer {
-    max-height: 200px;
+    max-height: 300px;
 }
 
 .faq-answer p {
-    padding: 0 1.875rem 1.563rem;
+    padding: 0 1.5rem 1.25rem;
     color: var(--text-color-primary);
     line-height: 1.6;
     font-size: var(--fs-paragraph);
     margin: 0;
     border-top: 1px solid var(--stroke-color);
-    padding-top: 1.25rem;
+    padding-top: 1rem;
+}
+
+/* Imagem de Pessoas Negras */
+.faq-image {
+    position: sticky;
+    top: 2rem;
+    height: 500px;
+    border-radius: 0;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--brand-color-primary), var(--brand-color-secondary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500"><style>.face{fill:%233d2b1f}.hair{fill:%231a110b}.shirt{fill:%230142a6}.bg{fill:%23f0f4f8}</style><rect class="bg" width="400" height="500"/><g transform="translate(200 250)"><circle class="face" cx="0" cy="0" r="60"/><path class="hair" d="M-70,-50 Q0,-100 70,-50 Q80,0 70,50 Q0,100 -70,50 Q-80,0 -70,-50Z"/><ellipse class="shirt" cx="0" cy="120" rx="80" ry="60"/></g><g transform="translate(100 300) scale(0.8)"><circle class="face" cx="0" cy="0" r="50"/><path class="hair" d="M-60,-40 Q0,-80 60,-40 Q70,0 60,40 Q0,80 -60,40 Q-70,0 -60,-40Z"/><ellipse class="shirt" cx="0" cy="100" rx="70" ry="50"/></g></svg>') center/contain no-repeat;
+}
+
+.faq-image-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.faq-image-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: var(--fw-bold);
+}
+
+.faq-image-content p {
+    font-size: var(--fs-paragraph);
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+    #faq .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .faq-image {
+        height: 300px;
+        order: -1;
+    }
+    
+    #faq .section-header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    #faq .section-header h2 {
+        font-size: var(--fs-h2);
+    }
+    
+    .faq-question {
+        padding: 1rem 1.25rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .faq-answer p {
+        padding: 0 1.25rem 1rem;
+        padding-top: 0.875rem;
+    }
+    
+    .faq-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    #faq {
+        padding: var(--padding-y-large) 0;
+    }
+    
+    .faq-question {
+        padding: 0.875rem 1rem;
+    }
+    
+    .faq-question h3 {
+        font-size: 0.95rem;
+    }
+    
+    .faq-toggle {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    
+    .faq-toggle:before {
+        width: 8px;
+    }
+    
+    .faq-toggle:after {
+        height: 8px;
+    }
+    
+    .faq-answer p {
+        padding: 0 1rem 0.875rem;
+        padding-top: 0.75rem;
+        font-size: 0.9rem;
+    }
 }
